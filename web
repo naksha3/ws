@@ -1,0 +1,35 @@
+sudo sed -i -re 's/([a-z]{2}\.)?archive.ubuntu.com|security.ubuntu.com/old-releases.ubuntu.com/g' /etc/apt/sources.list
+sudo apt-get update && sudo apt-get dist-upgrade
+
+sudo apt update
+sudo apt-get install apache2
+sudo service apache2 restart
+
+//go to 127.0.0.1 apache page will be displayed 
+
+sudo apt-get install mysql-server
+mysql server gets installled
+
+php 
+install the given op in terminal (sudo apt install php7.3-cli)
+sudo apt-get install php libapache2-mod-php php-mysql
+
+link php sql and apache server
+
+sudo systemctl start apache2
+sudo systemctl enable apache2
+sudo systemctl start mysql 
+sudo systemctl enable mysql
+
+sudo nano /etc/php/7.3/apache2/php.ini
+sudo nano /var/www/html/info.php
+
+enter in the file
+
+<?php 
+  phpinfo();
+?>
+
+ctrl+s
+
+https://127.0.0.1/info.php
